@@ -70,4 +70,5 @@ create table Lease_Contract(
     monthly_payment decimal(10,2),
     
     foreign key (VIN) references Vehicles(VIN)
+    aaaa
 );
