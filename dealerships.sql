@@ -85,12 +85,24 @@ VALUES
 ('1HGCM82633A004352', 'Honda', 'Accord', 2020, false, 'Blue', 'Sedan', 15000, 18999.99),
 ('1FAFP4041WF223344', 'Ford', 'Mustang', 2018, true, 'Red', 'Coupe', 42000, 23999.95),
 ('2C3KA53G76H105789', 'Chrysler', '300', 2019, false, 'Black', 'Sedan', 33000, 20999.00),
-('3N1AB7AP8GY276123', 'Nissan', 'Sentra', 2021, false, 'White', 'Sedan', 10000, 17999.49);
+('3N1AB7AP8GY276123', 'Nissan', 'Sentra', 2021, false, 'White', 'Sedan', 10000, 17999.49),
+('4T1BF1FK7GU263821', 'Toyota', 'Camry', 2016, false, 'Gray', 'Sedan', 50000, 15999.95),
+('5YJ3E1EA7KF317852', 'Tesla', 'Model 3', 2020, false, 'White', 'Electric', 12000, 37999.99),
+('1C4RJFBG7LC162934', 'Jeep', 'Grand Cherokee', 2020, false, 'Black', 'SUV', 18000, 34999.00),
+('WBA8D9G52JNU61239', 'BMW', '3 Series', 2018, false, 'Blue', 'Sedan', 25000, 28999.00);
 
 -- Generated Data for Inventory
-INSERT INTO Sales_Contract (VIN, sales_date, price)
+INSERT INTO Inventory (dealership_id, VIN) 
 VALUES
-('1FAFP4041WF223344', '2024-11-20', 23499.99);
+(1, '1HGCM82633A004352'),
+(2, '1FAFP4041WF223344'),
+(3, '2C3KA53G76H105789'),
+(1, '3N1AB7AP8GY276123'),
+(2, '4T1BF1FK7GU263821'),
+(3, '5YJ3E1EA7KF317852'),
+(1, '1C4RJFBG7LC162934'),
+(2, 'WBA8D9G52JNU61239');
+
 
 -- Generated Data for Sales Contract
 INSERT INTO Sales_Contract (VIN, sales_date, price)
